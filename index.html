@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Platano</title>
+
+	<style type="text/css">
+		#canvas {
+			-moz-transform: scaleX(-1);
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	        -ms-filter: "FlipH";
+		}
+	</style>
+</head>
+<body>
+    <video id="video" playsinline autoplay style="display:none;"></video>
+    <canvas id="canvas" width="475" height="475"></canvas>
+
+    <script type="text/javascript" src="webcam.js"></script>
+
+    <script type="text/javascript">
+
+    	window.onload = function() {
+    		mostrarCamara();
+    	}
+    </script>
+</body>
+</html>
